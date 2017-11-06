@@ -49,8 +49,8 @@
     
     NSData* encryptedData = [data encryptedDataWithPassword:[self key] iv:&iv salt:&salt error:&err];
     
-    NSLog(@"Iv: %@",iv);
-    NSLog(@"Salt: %@",salt);
+//    NSLog(@"Iv: %@",iv);
+//    NSLog(@"Salt: %@",salt);
     
     // Prepend IV to the encrypted data
     NSMutableData* mutableData = [NSMutableData dataWithData:iv];
@@ -68,8 +68,8 @@
     NSData* iv = [data subdataWithRange:NSMakeRange(0, kCCBlockSizeAES128)];
     NSData* salt = [data subdataWithRange:NSMakeRange(kCCBlockSizeAES128, 8)];
     
-    NSLog(@"Iv: %@",iv);
-    NSLog(@"Salt: %@",salt);
+//    NSLog(@"Iv: %@",iv);
+//    NSLog(@"Salt: %@",salt);
     
     // Remove the IV from the encrypted data
     NSMutableData* mutableData = [NSMutableData dataWithData:data];
