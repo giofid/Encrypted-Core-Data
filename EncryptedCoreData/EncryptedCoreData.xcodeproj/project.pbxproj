@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4447D23B216F9A57008ADF98 /* NSNumberEncryptionTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4447D239216F9A57008ADF98 /* NSNumberEncryptionTransformer.m */; };
 		C3230686188792270068E05E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3230685188792270068E05E /* Security.framework */; };
 		C3CCBB7718804338009BD3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CCBB7618804338009BD3ED /* Foundation.framework */; };
 		C3CCBB7B18804338009BD3ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CCBB7A18804338009BD3ED /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4447D239216F9A57008ADF98 /* NSNumberEncryptionTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberEncryptionTransformer.m; sourceTree = "<group>"; };
+		4447D23A216F9A57008ADF98 /* NSNumberEncryptionTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberEncryptionTransformer.h; sourceTree = "<group>"; };
 		C3230685188792270068E05E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C3CCBB7318804338009BD3ED /* EncryptedCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptedCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CCBB7618804338009BD3ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,6 +192,8 @@
 			children = (
 				C3CCBBAD18804AE8009BD3ED /* EncryptionTransformer.h */,
 				C3CCBBAE18804AE8009BD3ED /* EncryptionTransformer.m */,
+				4447D23A216F9A57008ADF98 /* NSNumberEncryptionTransformer.h */,
+				4447D239216F9A57008ADF98 /* NSNumberEncryptionTransformer.m */,
 				C3CCBBAF18804AE8009BD3ED /* NSStringEncryptionTransformer.h */,
 				C3CCBBB018804AE8009BD3ED /* NSStringEncryptionTransformer.m */,
 			);
@@ -301,6 +306,7 @@
 			files = (
 				C3CCBBBC18804AE8009BD3ED /* EncryptionTransformer.m in Sources */,
 				C3CCBB8C18804338009BD3ED /* EncryptedCoreData.xcdatamodeld in Sources */,
+				4447D23B216F9A57008ADF98 /* NSNumberEncryptionTransformer.m in Sources */,
 				C3CCBBBE18804AE8009BD3ED /* KeychainItemWrapper.m in Sources */,
 				C3CCBBC218804AE8009BD3ED /* DataGenerator.m in Sources */,
 				C3CCBB8918804338009BD3ED /* AppDelegate.m in Sources */,
