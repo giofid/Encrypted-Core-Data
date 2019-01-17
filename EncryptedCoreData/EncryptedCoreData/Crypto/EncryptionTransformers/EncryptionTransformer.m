@@ -41,7 +41,7 @@
 - (id)transformedValue:(NSData*)data
 {
     // If there's no key, don't try to transform the data
-    if ([self key] == nil || data == nil) return data;
+    if ([self key] == nil || data == nil || data.length == 0) return data;
     
     NSData* iv = nil;
     NSData* salt = nil;
@@ -62,7 +62,7 @@
 - (id)reverseTransformedValue:(NSData*)data
 {
     // If there's no key, don't try to transform the data
-    if ([self key] == nil || data == nil) return data;
+    if ([self key] == nil || data == nil || data.length == 0) return data;
     
     // The IV was stored in the first 128bits of the data
     NSData* iv = [data subdataWithRange:NSMakeRange(0, kCCBlockSizeAES128)];
